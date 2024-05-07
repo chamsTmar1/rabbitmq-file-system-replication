@@ -29,4 +29,3 @@ To run the project:
 
 - RabbitMQ Java Client
 - Java Development Kit (JDK)
-- JTables

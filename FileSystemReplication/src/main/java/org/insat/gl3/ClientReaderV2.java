@@ -2,73 +2,63 @@ package org.insat.gl3;
 
 
 import com.rabbitmq.client.*;
-
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.Map;
+import java.io.*;
+import java.util.*;
 import java.util.concurrent.TimeoutException;
 
+
 public class ClientReaderV2 {
-    private final static String READ_ALL_EXCHANGE = "read_all_exchange";
-    private final static String READ_ALL_RESPONSE_QUEUE_PREFIX = "read_all_response_queue_";
-
-    private ConnectionFactory factory;
-    private Connection connection;
-    private Channel channel;
-    private String readAllRequest = "Read All";
-
-    public ClientReaderV2() throws IOException, TimeoutException {
-        factory = new ConnectionFactory();
-        factory.setHost("localhost");
-        connection = factory.newConnection();
-        channel = connection.createChannel();
-
-        // Declare exchange for "Read All" requests
-        channel.exchangeDeclare(READ_ALL_EXCHANGE, BuiltinExchangeType.FANOUT);
-
-        // Declare response queues for "Read All" responses
-        for (int i = 1; i <= 3; i++) {
-            String queueName = READ_ALL_RESPONSE_QUEUE_PREFIX + i;
-            channel.queueDeclare(queueName, false, false, false, null);
-            channel.queueBind(queueName, READ_ALL_EXCHANGE, "");
-        }
-    }
-
-    public void requestReadAll() throws IOException {
-        // Send "Read All" request to all replicas
-        channel.basicPublish(READ_ALL_EXCHANGE, "", null, readAllRequest.getBytes(StandardCharsets.UTF_8));
-        System.out.println(" [x] Requested reading all files from replicas.");
-    }
-
-    public Map<Integer, String> readAllLines() throws IOException {
-        Map<Integer, String> lines = new HashMap<>();
-        // Read responses from all replicas
-        for (int i = 1; i <= 3; i++) {
-            String queueName = READ_ALL_RESPONSE_QUEUE_PREFIX + i;
-            GetResponse response = channel.basicGet(queueName, true);
-            if (response != null) {
-                String message = new String(response.getBody(), StandardCharsets.UTF_8);
-                lines.put(i, message);
-            }
-        }
-        return lines;
-    }
-
-    public void close() throws IOException, TimeoutException {
-        channel.close();
-        connection.close();
-    }
-
+    private static final String READ_ALL_EXCHANGE_NAME = "read_all_exchange";
+    private static final String READ_ALL_QUEUE = "read_all_queue";
+    private static final int NBR_REPLICAS = 3;
     public static void main(String[] args) {
-        try {
-            ClientReaderV2 client = new ClientReaderV2();
-            client.requestReadAll();
-            Map<Integer, String> lines = client.readAllLines();
-            System.out.println("Lines from replicas: " + lines);
-            client.close();
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setHost("localhost");
+
+        try (Connection connection = factory.newConnection();
+             Channel channel = connection.createChannel()) {
+
+            channel.exchangeDeclare(READ_ALL_EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
+            channel.queueDeclare(READ_ALL_QUEUE, false, false, false, null);
+
+            String message = "Read All";
+            channel.basicPublish(READ_ALL_EXCHANGE_NAME, "", null, message.getBytes());
+            System.out.println(" [x] a envoyé la requête 'Read All' aux réplicats");
+
+            // Ecouter les réponses de tous les réplicats
+            Map<String, Integer> lineCount = new HashMap<>();
+
+            DeliverCallback deliverCallback = (consumerTag, delivery) -> {
+                String response = new String(delivery.getBody(), "UTF-8");
+                System.out.println(" [x] a reçu des réplicats: " + response);
+                // Mettre à jour lineCount
+                lineCount.put(response, lineCount.getOrDefault(response, 0) + 1);
+            };
+
+            channel.basicConsume(READ_ALL_QUEUE, true, deliverCallback, consumerTag -> {});
+
+            // On attend que tts les réplicats ont répondu par leur lineCount
+            // avant de chercher la majorité des lignes
+            Thread.sleep(3000);
+
+            // Trouver les lignes qui apparaissent dans la majorité des réplicats
+            List<String> majLines = new ArrayList<>();
+            for (Map.Entry<String, Integer> entry : lineCount.entrySet()) {
+                if (entry.getValue() > NBR_REPLICAS / 2) {
+                    majLines.add(entry.getKey());
+                }
+            }
+
+            // Afficher les lignes qui apparaissent dans la majorité des réplicats
+            System.out.println("Lignes qui apparaissent dans la majorité des réplicats:");
+            for (String line : majLines) {
+                System.out.println(line);
+            }
+
         } catch (IOException | TimeoutException e) {
             e.printStackTrace();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 }

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="593af69c-8677-41f7-8654-28f1749c4382" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rabbitmq-file-system-replication.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/replica_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/replica_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/replica_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientReaderV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientReaderV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ParallelRunner3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/Replica.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/Replica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/SimulationRunner5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/SimulationRunner6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fichier_replica_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fichier_replica_3.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="45c95fb4-ea8c-47f6-8855-865975769d80" />
+        <option name="url" value="https://github.com/chamsTmar1/rabbitmq-file-system-replication.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2fWY1O64NgNl5u1883k67Kncvq4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.ClientReader.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientReaderV2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientWriter (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientWriter .executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientWriter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ParallelRunner.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ParallelRunner3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Replica (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Replica 1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Replica 2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Replica 3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Replica.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SimulationRunner5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SimulationRunner6.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FileSystemReplication [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FileSystemReplication [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chams/Documents/rabbitmq-file-system-replication&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chams\Documents\rabbitmq-file-system-replication\FileSystemReplication" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ClientWriter">
+    <configuration name="ClientWriter " type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.insat.gl3.ClientWriter" />
+      <module name="FileSystemReplication" />
+      <option name="PROGRAM_PARAMETERS" value="4 Text message4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.insat.gl3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.insat.gl3.ClientWriter" />
+      <module name="FileSystemReplication" />
+      <option name="PROGRAM_PARAMETERS" value="2 Text message2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.insat.gl3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelRunner3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.insat.gl3.ParallelRunner3" />
+      <module name="FileSystemReplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.insat.gl3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Replica (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.insat.gl3.Replica" />
+      <module name="FileSystemReplication" />
+      <option name="PROGRAM_PARAMETERS" value="1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.insat.gl3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Replica" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.insat.gl3.Replica" />
+      <module name="FileSystemReplication" />
+      <option name="PROGRAM_PARAMETERS" value="1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.insat.gl3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ClientWriter" />
+      <item itemvalue="Application.Replica (2)" />
+      <item itemvalue="Application.Replica" />
+      <item itemvalue="Application.ParallelRunner3" />
+      <item itemvalue="Application.ClientWriter " />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientWriter " />
+        <item itemvalue="Application.ClientWriter" />
+        <item itemvalue="Application.Replica" />
+        <item itemvalue="Application.Replica (2)" />
+        <item itemvalue="Application.ParallelRunner3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="593af69c-8677-41f7-8654-28f1749c4382" name="Changes" comment="" />
+      <created>1713918086910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713918086910</updated>
+      <workItem from="1713918087985" duration="34241000" />
+      <workItem from="1714906093239" duration="12272000" />
+      <workItem from="1715036844335" duration="3458000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>

@@ -1,40 +1,39 @@
 package org.insat.gl3;
 
-
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-public class ClientReader {
-    private final static String READ_LAST_EXCHANGE = "read_last_exchange";
-    private final static String RESPONSE_QUEUE = "response_queue";
-    private final static String READ_REQUEST_MESSAGE = "Read Last";
 
-    public static void main(String[] args) throws IOException, TimeoutException {
+public class ClientReader {
+    private static final String READ_LAST_EXCHANGE_NAME = "read_last_exchange";
+    private static final String READ_LAST_QUEUE = "read_last_queue";
+
+    public static void main(String[] args) {
+
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
 
         try (Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()) {
-            // Déclaration de l'échange et de la queue pour la réponse
-            channel.exchangeDeclare(READ_LAST_EXCHANGE, BuiltinExchangeType.FANOUT);
-            String queueName = channel.queueDeclare(RESPONSE_QUEUE, false, false, false, null).getQueue();
-            channel.queueBind(queueName, READ_LAST_EXCHANGE, "");
 
-            // Envoyer la requête de lecture
-            channel.basicPublish(READ_LAST_EXCHANGE, "", null, READ_REQUEST_MESSAGE.getBytes("UTF-8"));
-            System.out.println(" [x] Requête de lecture envoyée.");
+            channel.exchangeDeclare(READ_LAST_EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
+            channel.queueDeclare(READ_LAST_QUEUE, false, false, false, null);
 
-            // Écouter la réponse du replica
+            String message = "Read Last";
+            channel.basicPublish(READ_LAST_EXCHANGE_NAME, "", null, message.getBytes());
+            System.out.println(" [x] a envoyé la requête 'Read Last' aux réplicats");
+
             DeliverCallback deliverCallback = (consumerTag, delivery) -> {
-                String message = new String(delivery.getBody(), "UTF-8");
-                System.out.println(" [x] Réponse du Replica : '" + message + "'");
-                // Affichage de la réponse et fermeture du programme
-                System.out.println(" [x] Dernière ligne du fichier texte : '" + message + "'");
+                String response = new String(delivery.getBody(), "UTF-8");
+                System.out.println(" [x] a reçu des réplicats: " + response);
             };
-            channel.basicConsume(queueName, true, deliverCallback, consumerTag -> {
-            });
+
+            channel.basicConsume(READ_LAST_QUEUE, true, deliverCallback, consumerTag -> {});
+
+        } catch (IOException | TimeoutException e) {
+            e.printStackTrace();
         }
     }
 }
