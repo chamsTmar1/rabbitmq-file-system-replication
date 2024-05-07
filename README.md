@@ -12,10 +12,11 @@ The project implements two strategies for data replication:
 The project consists of three main processes:
 
 1. **ClientWriter:** A Java program responsible for initiating transactions to add lines of text to files.
-2. **ClientReader:** A Java program for reading lines of text from files.
-3. **Replica:** A Java program that handles client requests for both read and write operations.
+2. **ClientReader:** A Java program for reading last line of text from files.
+3. **ClientReaderV2:** A Java program for reading all lines of text from files then displaying the lines appearing in the majority of files.
+4. **Replica:** A Java program that handles client requests for both read and write operations.
 
-Please note that comments and documentation within the project are in French.
+Please note that comments within the project are in French.
 
 ## Usage
 
@@ -30,7 +31,9 @@ To test the project:
 6. Now, Simulate a failure by stopping the execution of one of the replicas, then perform a read with the client to observe how replication ensures data availability.
 7. Conduct an execution simulation where the `ClientWriter` writes two lines of data, then stops Replica 2, writes two more lines, and then restarts Replica 2. Verify that the files in all three replicas do not contain the same data.
 8. Keep the replicas processes running and run ClientReaderV2 to get the lines that appear in the majority of the files
-**N.B :** If you're using Intellij idea IDE for Java (as this is a maven project -> IDE helps a lot) , to run Replica processes in parallel with different argument each time, execute it one time on the IDE then copy the command from console and paste it in three instances of command prompts, each time changing the argument. 
+
+**N.B :** If you're using Intellij idea IDE for Java (as this is a maven project -> IDE helps a lot) , to run Replica processes in parallel with different argument each time, execute it one time on the IDE then copy the command from console and paste it in three instances of command prompts, each time changing the argument.
+
 ## Dependencies
 
 - RabbitMQ Java Client
