@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="593af69c-8677-41f7-8654-28f1749c4382" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rabbitmq-file-system-replication.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/replica_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/replica_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/replica_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientReaderV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientReaderV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ClientWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/ParallelRunner3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/Replica.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/Replica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/SimulationRunner5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSystemReplication/src/main/java/org/insat/gl3/SimulationRunner6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fichier_replica_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fichier_replica_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/Rep2/fichier.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/Rep2/fichier.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSystemReplication/Rep3/fichier.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FileSystemReplication/Rep3/fichier.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,52 +47,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.ClientReader.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClientReaderV2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClientWriter (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClientWriter .executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClientWriter.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ParallelRunner.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ParallelRunner3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Replica (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Replica 1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Replica 2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Replica 3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Replica.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SimulationRunner5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SimulationRunner6.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.FileSystemReplication [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.FileSystemReplication [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chams/Documents/rabbitmq-file-system-replication&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.ClientReader.executor": "Run",
+    "Application.ClientReaderV2.executor": "Run",
+    "Application.ClientWriter (2).executor": "Run",
+    "Application.ClientWriter .executor": "Run",
+    "Application.ClientWriter.executor": "Run",
+    "Application.ParallelRunner.executor": "Run",
+    "Application.ParallelRunner3.executor": "Run",
+    "Application.Replica (2).executor": "Run",
+    "Application.Replica 1.executor": "Run",
+    "Application.Replica 2.executor": "Run",
+    "Application.Replica 3.executor": "Run",
+    "Application.Replica.executor": "Run",
+    "Application.SimulationRunner5.executor": "Run",
+    "Application.SimulationRunner6.executor": "Run",
+    "Maven.FileSystemReplication [clean].executor": "Run",
+    "Maven.FileSystemReplication [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chams/Documents/rabbitmq-file-system-replication",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chams\Documents\rabbitmq-file-system-replication\FileSystemReplication" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClientWriter">
+  <component name="RunManager">
     <configuration name="ClientWriter " type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.insat.gl3.ClientWriter" />
       <module name="FileSystemReplication" />
-      <option name="PROGRAM_PARAMETERS" value="4 Text message4" />
+      <option name="PROGRAM_PARAMETERS" value="4Text message4" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.insat.gl3.*" />
@@ -123,7 +106,7 @@
     <configuration name="ClientWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.insat.gl3.ClientWriter" />
       <module name="FileSystemReplication" />
-      <option name="PROGRAM_PARAMETERS" value="2 Text message2" />
+      <option name="PROGRAM_PARAMETERS" value="1 Text message1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.insat.gl3.*" />
@@ -184,8 +167,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientWriter " />
         <item itemvalue="Application.ClientWriter" />
+        <item itemvalue="Application.ClientWriter " />
         <item itemvalue="Application.Replica" />
         <item itemvalue="Application.Replica (2)" />
         <item itemvalue="Application.ParallelRunner3" />
@@ -203,6 +186,8 @@
       <workItem from="1713918087985" duration="34241000" />
       <workItem from="1714906093239" duration="12272000" />
       <workItem from="1715036844335" duration="3458000" />
+      <workItem from="1715066967133" duration="119000" />
+      <workItem from="1715167790213" duration="2464000" />
     </task>
     <servers />
   </component>
